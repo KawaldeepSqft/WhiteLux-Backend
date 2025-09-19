@@ -75,6 +75,11 @@ app.post("/submit", async (req, res) => {
   }
 });
 
+app.get("/test", (req, res) => {
+  res.send("backend working properly ");
+});
+
+
 app.use("/api/reqcall", ReqCallRoute);
 app.listen(5000, () => {
   console.log("✅ Backend running on http://localhost:5000");
